@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
   <title id="title">Chen Xu — Backend and AI Infrastructure</title>
-  <desc id="desc">A deep navy celestial banner with a softly glowing nebula, twinkling stars, and an animated constellation.</desc>
+  <desc id="desc">A deep navy celestial banner featuring the Cancer constellation, the Beehive star cluster, twinkling stars, and a softly glowing nebula.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#070B1D"/><stop offset=".52" stop-color="#111735"/><stop offset="1" stop-color="#090D22"/>
@@ -21,7 +21,7 @@
       .s2 { animation-delay:-1.3s; } .s3 { animation-delay:-2.7s; }
       .constellation { fill:none; stroke:url(#line); stroke-width:1.35; stroke-linecap:round; stroke-dasharray:5 8; animation:draw 16s linear infinite; }
       .node { fill:#C8D5FF; filter:url(#glow); animation:pulse 4s ease-in-out infinite; }
-      .orbit { fill:none; stroke:#8DA5FF; stroke-opacity:.12; stroke-width:1; stroke-dasharray:2 9; transform-origin:900px 160px; animation:rotate 70s linear infinite; }
+      .orbit { fill:none; stroke:#8DA5FF; stroke-opacity:.12; stroke-width:1; stroke-dasharray:2 9; transform-origin:930px 160px; animation:rotate 70s linear infinite; }
       @keyframes twinkle { 0%,100%{opacity:.25;transform:scale(.72)} 50%{opacity:1;transform:scale(1.22)} }
       @keyframes pulse { 0%,100%{opacity:.5} 50%{opacity:1} }
       @keyframes draw { to { stroke-dashoffset:-104 } }
@@ -41,18 +41,34 @@
     <circle class="star" cx="950" cy="285" r="1.1"/><circle class="star s3" cx="60" cy="170" r="1.1"/><circle class="star s2" cx="370" cy="160" r=".9"/>
     <circle class="star" cx="560" cy="180" r=".9"/><circle class="star s3" cx="840" cy="35" r="1"/><circle class="star" cx="1080" cy="180" r="1.1"/>
   </g>
-  <g class="orbit"><ellipse cx="900" cy="160" rx="250" ry="105"/><ellipse cx="900" cy="160" rx="205" ry="145" transform="rotate(35 900 160)"/></g>
+  <g class="orbit"><ellipse cx="930" cy="160" rx="245" ry="105"/><ellipse cx="930" cy="160" rx="205" ry="145" transform="rotate(35 930 160)"/></g>
+  <!-- Cancer constellation: a stylized sky-chart arrangement, with the Beehive cluster -->
   <g class="constellation">
-    <path d="M770 92 L830 132 L900 88 L966 139 L1032 98 L1090 151 L1140 116"/>
-    <path d="M830 132 L850 205 L930 228 L966 139 L1010 235"/>
+    <path d="M805 105 L862 139 L923 112 L980 151 L1044 126"/>
+    <path d="M862 139 L847 207 L915 229 L980 151 L1018 220"/>
+    <path d="M923 112 L915 229"/>
   </g>
   <g>
-    <circle class="node" cx="770" cy="92" r="2.8"/><circle class="node" cx="830" cy="132" r="3.2"/>
-    <circle class="node" cx="900" cy="88" r="2.6"/><circle class="node" cx="966" cy="139" r="3.4"/>
-    <circle class="node" cx="1032" cy="98" r="2.5"/><circle class="node" cx="1090" cy="151" r="3"/>
-    <circle class="node" cx="1140" cy="116" r="2.4"/><circle class="node" cx="850" cy="205" r="2.2"/>
-    <circle class="node" cx="930" cy="228" r="2.7"/><circle class="node" cx="1010" cy="235" r="2.2"/>
+    <circle class="node" cx="805" cy="105" r="2.7"/>
+    <circle class="node" cx="862" cy="139" r="3.2"/>
+    <circle class="node" cx="923" cy="112" r="3.0"/>
+    <circle class="node" cx="980" cy="151" r="3.3"/>
+    <circle class="node" cx="1044" cy="126" r="2.8"/>
+    <circle class="node" cx="847" cy="207" r="2.5"/>
+    <circle class="node" cx="915" cy="229" r="2.8"/>
+    <circle class="node" cx="1018" cy="220" r="2.5"/>
   </g>
+  <!-- Beehive Cluster (M44), a small luminous star field in Cancer -->
+  <g fill="#DCE7FF" opacity=".82">
+    <circle cx="1090" cy="185" r="1.2"/><circle cx="1102" cy="177" r="1"/>
+    <circle cx="1113" cy="190" r="1.4"/><circle cx="1124" cy="178" r=".9"/>
+    <circle cx="1134" cy="194" r="1.1"/><circle cx="1098" cy="202" r=".9"/>
+    <circle cx="1112" cy="211" r="1.2"/><circle cx="1127" cy="207" r=".8"/>
+    <circle cx="1142" cy="215" r="1.1"/><circle cx="1150" cy="194" r=".9"/>
+    <circle cx="1108" cy="224" r=".8"/><circle cx="1134" cy="228" r="1"/>
+  </g>
+  <text x="1100" y="258" fill="#AFC2F4" opacity=".72" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" letter-spacing="2">M44 · BEEHIVE</text>
+  <text x="1005" y="286" fill="#B9C7FF" opacity=".85" font-family="Georgia,serif" font-size="28">♋</text>
   <g font-family="Inter,Segoe UI,Arial,sans-serif">
     <text x="92" y="135" fill="#F3F5FF" font-size="54" font-weight="650" letter-spacing="-1.5">Chen Xu</text>
     <rect x="95" y="157" width="54" height="3" rx="1.5" fill="#91A5FF"/>
